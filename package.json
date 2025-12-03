@@ -6,15 +6,16 @@
     "build": "tsc -p tsconfig.json"
   },
   "dependencies": {
+    "dotenv": "^16.0.0",
     "express": "^4.21.2",
-    "viem": "^1.0.0",
-    "dotenv": "^16.0.0"
+    "express-rate-limit": "^8.2.1",
+    "viem": "^1.0.0"
   },
   "devDependencies": {
+    "@types/node": "^18.0.0",
     "nodemon": "^3.1.0",
-    "typescript": "^5.1.6",
     "ts-node": "^10.9.1",
     "ts-node-dev": "^2.0.0",
-    "@types/node": "^18.0.0"
+    "typescript": "^5.1.6"
   }
 }
