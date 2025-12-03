@@ -1,11 +1,20 @@
 {
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon index.js",
+    "dev": "ts-node-dev --respawn --transpile-only listener/listener.ts",
+    "start:ts": "node --enable-source-maps dist/listener.js",
+    "build": "tsc -p tsconfig.json"
   },
   "dependencies": {
-    "express": "^4.21.2"
+    "express": "^4.21.2",
+    "viem": "^1.0.0",
+    "dotenv": "^16.0.0"
   },
   "devDependencies": {
-    "nodemon": "^3.1.0"
+    "nodemon": "^3.1.0",
+    "typescript": "^5.1.6",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "@types/node": "^18.0.0"
   }
 }
